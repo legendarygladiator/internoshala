@@ -1,0 +1,658 @@
+:root{
+  --brand-blue: #1E96F0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  height:100px;
+}
+
+.navbar-logo {
+  float:left;
+}
+.Shala{
+  color:var(--brand-blue);
+}
+
+.navbar-shortcuts{
+  float:right;
+}
+.navbar-button-1, .navbar-button-2{
+  float:right;
+}
+.navbar-button-2{
+  color: white !important;
+  height: 39px;
+}
+.navbar-dropdown-register{
+  margin-left: 540px !important;
+}
+
+.orange-box{
+  background: orange;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.page, :target ~ .default {
+  display: none;
+}
+.default, :target {
+  display: block;
+}
+
+#overlay-login {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-login-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.overlay-login:hover{
+  cursor: default !important;
+}
+
+.offcanvas-body a:hover{
+  background: #dcdcdc;
+}
+.offcanvas-collapse-menu-1 li{
+  list-style: none;
+  font-size:30px;
+}
+.accordion-item{
+  border: none !important;
+}
+.accordion-button{
+  padding: 5px !important;
+}
+.accordion-button a:hover{
+  background: none !important;
+}
+.offcanvas-dropdown-accordion-list .dropdown-item{
+  font-size:22px !important;
+}
+/* HEADER ENDS */
+
+
+/* MAIN */
+
+.search-box{
+  margin: 0 auto;
+}
+.search-area{
+  height: 50px;
+  width: 30vw !important;
+}
+.search-icon{
+  width: 5vw;
+  font-size:20px !important;
+}
+
+.overlay-search-box {
+  height: 90%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 70%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay-subcontent{
+  margin-top: 50px;
+  float: left;
+}
+.overlay-subcontent-heading{
+  float:left;
+}
+.overlay-subcontent-content{
+  margin-top: 10px;
+}
+.overlay-subcontent-content a{
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: gray;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-top: 50px !important;
+}
+.overlay-subcontent-content a:hover{
+  color: gray;
+  text-decoration: underline;
+}
+
+.overlay-search-box .closebtn, .login-overlay-close-btn  {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 80px;
+  cursor: pointer;
+  color: black;
+}
+.login-overlay-close-btn{
+  color: white;
+}
+
+.overlay-search-box input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid black;
+  float: left;
+  width: 90%;
+  background: white;
+}
+
+.overlay-search-box button {
+  float: left;
+  width: 10%;
+  padding: 15px;
+  font-size: 17px;
+}
+
+
+.carousel-image{
+  height: 38vw;
+}
+.carousel-item-main{
+  height: 38vw;
+  background-image: linear-gradient(to bottom right, rgba(30,150,252), rgba(255,0,0,0));
+}
+
+.view-all-link-top{
+  float: right;
+}
+.view-all-link-bottom a, .view-all-link-top a, .view-all-link-header a{
+  text-decoration: none;
+  color:var(--brand-blue);
+  font-weight:bold;
+}
+
+.card{
+  border: none !important;
+}
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--brand-blue);
+  font-weight:bold;
+  cursor: pointer;
+}
+.card-text{
+  text-align: center;
+}
+.card-img-top{
+  margin: 0 auto;
+  height:100px;
+  width:100% !important;
+}
+.job-card:hover{
+  box-shadow:none;
+  font-weight: normal;
+  color: black;
+  cursor:default;
+}
+.more30{
+  color: #999999;
+}
+
+/* MAIN ENDS */
+
+
+/* FOOTER */
+footer{
+  background:#505050;
+  color: white;
+  padding: 60px 0 50px 0;
+}
+.footer-link{
+  text-align:center;
+}
+.footer-list{
+  list-style-type:none;
+}
+.footer-list a{
+  text-decoration: none;
+  color: inherit;
+}
+.footer-list a:hover{
+  color: inherit;
+}
+.footer-list li{
+  margin-top: 5px;
+}
+.footer-list li:hover{
+  font-size: 16.5px;
+}
+.footer-list:hover{
+  cursor: pointer;
+}
+
+.footer-hr{
+  width: 80%;
+  height:2px !important;
+  margin: auto;
+}
+
+.app-button{
+  display: inline-block;
+  border-color: white !important;
+  color: white !important;
+  font-size: 20px !important;
+}
+.app-button:hover{
+  background: white !important;
+  color: black !important;
+}
+
+.social-icons{
+  display: inline-block;
+  font-size:30px;
+}
+.social-icons a{
+  color: white;
+}
+.social-icons i:hover{
+  font-size:32px;
+}
+.social-icons a:hover{
+  color: white;
+}
+
+.copyright{
+  float:right;
+}
+/* FOOTER ENDS */
+
+
+
+/* RESPONSIBLE AREA */
+@media (max-width:992px) {
+  .hamburger-button{
+    font-size:35px;
+    color: black;
+    float:left;
+    font-weight: 100;
+  }
+  .hamburger-button:hover{
+    color: black;
+  }
+  .nav-link{
+    color: black !important;
+  }
+  header .offcanvas-start{
+    font-size: 2em;
+  }
+  .offcanvas-extras{
+    color: black !important;
+    font-size:20px;
+  }
+  .offcanvas-extras:hover{
+    color: black;
+  }
+
+  .navbar-button-2{
+    color: white !important;
+    height: 39px;
+  }
+
+  /* MAIN */
+  .search-area{
+    height: 40px;
+    width: 37vw !important;
+  }
+  .search-icon{
+    width: 5.5vw;
+    height:40px;
+    font-size:15px !important;
+  }
+
+  .main-written-content, .view-all-link-bottom{
+    text-align:center;
+  }
+  /* MAIN ENDS */
+
+  /* FOOTER */
+  .footer-link{
+    text-align:left;
+  }
+  /* FOOTER ENDS */
+}
+
+@media (max-width:576px) {
+  .navbar-button-1{
+    font-size: 13px !important;
+    padding: 3px !important;
+  }
+
+  .search-area{
+    height: 37px;
+    width: 55vw !important;
+  }
+  .search-icon{
+    width: 9vw;
+    height:37px;
+    font-size:12px !important;
+  }
+
+  .overlay-subcontent-content a{
+    font-size: 14px;
+  }
+
+  .overlay-search-box input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    width: 80%;
+    border-radius: 4px
+  }
+
+  .overlay-search-box button {
+    width: 20%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .card{
+    margin: 0 auto;
+    justify-content:center !important;
+    width: 50% !important;
+  }
+
+  .main-written-content-heading h1{
+    font-size: 1.3em !important;
+  }
+  .main-written-content-discription{
+    font-size:.8em !important;
+  }
+  .main-written-content-heading-2 h3{
+    font-size:1.1em !important;
+  }
+}
+
+
+
+
+
+/* INTERNSHIPS PAGE */
+
+/* HEADER */
+/* HEADER ENDS */
+
+/* MAIN */
+.internships-lg-heading-filter{
+  border: 1px solid black;
+  border-radius:5px;
+  width:100px;
+  color: black;
+  cursor: pointer;
+}
+#filter-overlay-content{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 5;
+}
+
+.internships-main-filter-box{
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  margin-left: 10vw !important;
+}
+.internships-main-filter-box-search{
+  width:82% !important;
+  float:left;
+}
+.internships-main-filter-box-search-icon{
+  width:15% !important;
+}
+
+.row .internships-card:hover{
+  font-weight:normal !important;
+  color: black !important;
+}
+/* MAIN ENDS */
+
+/* FOOTER */
+
+.internships-footer{
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+}
+
+/* FOOTER ENDS */
+/* RESPONSIBLE AREA */
+@media (min-width: 992px) {
+  .internships-card{
+    float: right;
+  }
+}
+/* INTERNSHIPS PAGE ENDS */
+
+/* FRESHER JOBS */
+
+/* HEADER */
+/* HEADER ENDS */
+
+/* MAIN */
+.fresher-jobs-banner{
+  background-image: linear-gradient(to bottom right, rgba(30,150,252,0.9), rgba(255,0,0,0));
+  color: white;
+}
+/* MAIN ENDS */
+
+/* FOOTER */
+/* FOOTER ENDS */
+
+/* FRESHER JOBS PAGE ENDS */
+
+
+
+/* TRAININGS PAGE */
+
+/* HEADER */
+.trainings-logo{
+  font-size:12px;
+}
+.trainings-navbar-dropdown{
+  width:600px;
+}
+
+/* HEADER ENDS */
+
+/* MAIN */
+.carousel-item-trainings{
+  height: 18vw;
+  background-image: linear-gradient(to bottom right, rgba(30,150,252), rgba(255,0,0,0));
+}
+
+.trainings-cards{
+  margin: 0 15px 0 15px;
+}
+.card-img-top-trainings{
+  height: 16vw;
+}
+.trainings-specialisations-card .card-body{
+  background-image: linear-gradient(to bottom right, rgba(30,150,252), rgba(255,0,0,0));
+}
+.trainings-specialisations-card .card:hover{
+  font-weight: normal;
+  font-size: 1em;
+  color: black;
+}
+/* MAIN ENDS */
+
+/* FOOTER */
+.trainings-md-footer-courses-content a{
+  font-size:0.7em;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  margin: 3px;
+  border-radius:5px;
+}
+.trainings-md-footer-courses-content a:hover{
+  color: white !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.trainings-footer-navigation{
+  font-size:0.8em;
+}
+.trainings-footer-navigation .row li{
+  list-style:none;
+}
+.trainings-footer-navigation .row li a{
+  color: white
+}
+.trainings-footer-navigation .row li a:hover{
+  color: black;
+  border-radius: 2px;
+}
+
+.trainings-footer-bottom a{
+  text-decoration:none;
+  color: white;
+  padding:5px;
+  width:100% !important;
+}
+.trainings-footer-bottom a:hover, .trainings-footer-bottom li:hover{
+  color: black;
+  font-size:1.03em;
+}
+.trainings-footer-bottom li{
+  list-style:none;
+}
+.trainings-footer-bottom li:hover{
+  background: rgba(255,255,255);
+}
+/* FOOTER ENDS */
+
+/* RESPONSIBLE AREA */
+@media (max-width:992px) {
+  .navbar-brand{
+    margin-left: 30vw ;
+  }
+  .carousel-item-trainings{
+    height: 24vw;
+  }
+  .card-img-top-trainings{
+    height: 18vw;
+  }
+}
+@media (max-width:576px) {
+  .navbar-brand{
+    margin-left: 18vw ;
+  }
+  .carousel-item-trainings{
+    height: 30vw;
+  }
+  .card-img-top-trainings{
+    height: 32vw;
+  }
+}
+@media (max-width:350px) {
+  .navbar-brand{
+    margin-left: 2vw ;
+  }
+}
+
+/* TRAININGS PAGE ENDS */
+
+/* CONTACT US */
+iframe{
+  width: 100%;
+  height: 30vw;
+  border-radius: 10px;
+}
+@media (max-width:768px) {
+  .contact-us-lower{
+    text-align: center;
+  }
+  iframe{
+    height: 50vw;
+  }
+}
+/* CONTACT US PAGE ENDS */
+
+/* REGISTER-EMPLOYER */
+.blue-background{
+  background-image: linear-gradient(to bottom right, rgba(30,150,252,0.4), rgba(255,0,0,0));
+  z-index: -1;
+}
+.register-page-main-nav div{
+  height: 50px;
+  text-align: center;
+  background-color: gainsboro;
+}
+.register-page-main-nav a{
+  text-decoration: none;
+  color: black;
+  padding: 0px;
+}
+.register-page-main-nav a:hover{
+  color: inherit;
+}
+.registration-employer-postjob-testimony{
+  background: rgba(30,150,252,0.4);
+}
+.registration-card{
+  width: 380px;
+  background-color: white;
+}
+/* FOOTER */
+.list-group-registration-footer-list .list-group-item{
+  border: 0px;
+  background-color: inherit;
+  list-style: none;
+}
+.list-group-registration-footer-list .list-group-item a{
+  text-decoration: none;
+  color: white;
+}
+.list-group-registration-footer-list .list-group-item a:hover{
+  color: white;
+  font-size: 1.02em;
+}
+/* FOOTER ENDS */
+@media (max-width:768px) {
+}
+/* REGISTER EMPLOYER  PAGE ENDS */
